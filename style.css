@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_side{
+    position: relative;
+    background: #2E449A;
+    margin: 0 0 20px 20px;
+}
+.container .left_side_up{
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+    margin-bottom: 50px;
+}
+
+.profileText img{
+    position: relative;
+    width: 200px;   
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.left_side .myInfo ul li {
+    margin: 20px 0;
+    list-style: none;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.left_side .myInfo ul li h4{
+    font-weight: 500;
+}
+
+.myInfo.social{
+    margin-top: 80px;
+}
+.myInfo.social .box .fab{
+    /* padding: 8px; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.myInfo.interest{
+    background: #000;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    padding: 40px;
+}
+.myInfo.interest h4{
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.myInfo.interest ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.myInfo.interest ul li{
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+}
+.myInfo.interest ul li .fas{
+    color: #2E449A;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.container .right_side{
+    position: relative;
+    background: #fff;
+}
+.right_side .first-section{
+    padding: 100px 40px 40px 40px;
+    background-image: url(./glasses.jpg);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./glasses.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.right_side .first-section h1{
+    font-size: 3.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    word-spacing: 6px;
+    color: #fff;
+}
+.right_side .first-section span{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff;
+    padding: 5px 20px;
+    background: #2E449A;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.second-section{
+    background: #000;
+    padding: 40px;
+}
+.second-section h4,span{
+    color: #fff;
+}
+.second-section span{
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.second-section h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 500;
+    word-spacing: 4px;
+    margin-bottom: 10px;
+}
+.skills ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.skills ul li{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    padding:10px 20px;
+    text-transform: uppercase;
+}
+.skills ul li div{
+    height: 100%;
+    padding: 5px 0;
+}
+.skills li .o-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 7px;
+    background: #fff;
+}
+.skills li .in-box{
+    background: #2E449A;
+    height: 100%;
+}
+
+.third-section{
+    padding:40px;
+}
+.third-section h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 500;
+    word-spacing: 4px;
+    margin-bottom: 10px;
+}
+.third-section .cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cont .exp-l{
+    background: #fff;
+    /* border: 1px solid #000; */
+}
+.exp-l h4,.exp-r h4{
+    text-transform: none;
+    width: 55%;
+    padding: 5px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    background: #2E449A;
+}
+.exp-l h3,.exp-r h3{
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.3px;
+    word-spacing: 4px;
+    font-weight: 700;
+}
+.exp-l span, .exp-r span{
+    color: #000;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.exp-l p,.exp-r p{
+    margin: 10px 0 0 0;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+.exp-l div,.exp-r div{
+    margin: 0 0 30px 0;
+}
+
+.cont .exp-r{
+    background: #fff;
+    /* border: 1px solid #000; */
+}
+
+@media (max-width:1090px){
+    .container{
+        margin: 20px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .myInfo.interest ul li .fas {
+        color: #2E449A;
+        font-size: 3em;
+        margin: 15px 0;
+    }
+    .myInfo.interest ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .skills ul li {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:600px){
+    .skills ul {
+        grid-template-columns: 1fr;
+    }
+    .third-section .cont {
+        grid-template-columns: 1fr;
+    }
+    .right_side .first-section h1 {
+        font-size: 2em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 6px;
+    }
+    .right_side .first-section span {
+        font-size: 1em;
+    }
+    .right_side .first-section {
+        padding: 100px 20px 20px 20px;
+    }
+}
